@@ -28,7 +28,8 @@ def main():
         # Generate and display n-grams
         n_grams = generate_ngrams(text_input, n)
         st.write(f"{n}-grams:")
-        st.write(n_grams)
+        for gram in n_grams:
+            st.write(gram)
 
 if _name_ == "_main_":
     main()
